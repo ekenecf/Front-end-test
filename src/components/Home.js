@@ -1,6 +1,7 @@
 import React from 'react'
 import { AiOutlineSearch } from 'react-icons/ai'
-import LatestTrend from './LatestTrend'
+// import LatestTrend from './LatestTrend'
+import Products from './Products'
 // import image from '../public/cloth.jpg'
 
 const Home = () => {
@@ -12,7 +13,7 @@ const Home = () => {
           <AiOutlineSearch className="Search" />{' '}
         </button>
       </form>
-      <LatestTrend />
+      {/* <LatestTrend /> */}
     </div>
   )
 }
