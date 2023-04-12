@@ -1,5 +1,6 @@
 import React from 'react'
 import { AiOutlineSearch } from 'react-icons/ai'
+import LatestTrend from './LatestTrend'
 // import image from '../public/cloth.jpg'
 
 const Home = () => {
@@ -11,7 +12,7 @@ const Home = () => {
           <AiOutlineSearch className="Search" />{' '}
         </button>
       </form>
-      
+      <LatestTrend />
     </div>
   )
 }
