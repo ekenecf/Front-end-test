@@ -11,6 +11,10 @@
   align-items: center;
 }
 
+.loading {
+  font-size: 40px;
+}
+
 .search-box button {
   background: none; 
   border: none; 
@@ -82,6 +86,10 @@ input[type='search']::-webkit-search-cancel-button {
   box-shadow: 1px 2px 9px -4px rgba(0,0,0,0.97);
 }
 
+.notrend {
+  display: none;
+}
+
 p {
   font-family: 'Roboto', sans-serif;
 }
@@ -104,6 +112,7 @@ p {
 
 .dardImage p {
   font-size: 13px;
+  text-align: center;
 }
 
 .dardImage img {
@@ -127,10 +136,14 @@ small {
   background-repeat: no-repeat;
   background-size: cover; */
   /* background: #a9a6a6; */
-  height: 100vh;
+ max-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.invalidSearch p {
+  font-size: 35px;
 }
 
 .products .search-box {
@@ -150,7 +163,7 @@ small {
   display: flex;
   justify-content: space-between;
   width: 95%;
-  height: 100vh;
+  max-height: 80vh;
   margin-top: 1%;
 }
 
@@ -168,6 +181,7 @@ small {
 .productsItems {
   background: #9df0a8;
   width: 61%;
+  height: 80vh;
   display: grid;
   /* justify-content: space-around; */
   overflow-y: auto;
@@ -180,8 +194,9 @@ small {
   width: 100%;
   /* padding-left: 1%; */
   padding-top: 8%;
+  padding-bottom: 15%;
   position: relative;
-
+  height: 30vh;
 }
 
 .productImageCard p {
@@ -190,6 +205,7 @@ small {
 
 .productImageCard img {
   width: 95%;
+  height: 100%;
 }
 
 .like {
