@@ -1,12 +1,15 @@
-// import { AiOutlineSearch } from 'react-icons/ai'
+import { AiOutlineSearch } from 'react-icons/ai'
 import { MdArrowDropDown } from 'react-icons/md'
 import { useState } from 'react'
 import { FcLike } from 'react-icons/fc'
 import { GiSelfLove } from 'react-icons/gi'
+// import sample from '../public/cloth.jpg'
 
 const Products = (data) => {
   const [isHovering, setIsHovering] = useState('')
   const [like, setLike] = useState('')
+
+  console.log('latestProducts', like)
 
   return (
     <div className="products">
@@ -119,7 +122,7 @@ const Products = (data) => {
                 onMouseLeave={() => setIsHovering(false)}
               >
                 <img src={datum.image} alt="productImg" />
-                {+like !== datum.id ? (
+                {like !== datum.id ? (
                   <GiSelfLove className="like" onClick={() => setLike(datum.id)} />
                 ) : (
                   <FcLike className="like" onClick={() => setLike(datum.id)} />
