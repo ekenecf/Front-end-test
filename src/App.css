@@ -199,6 +199,37 @@ small {
   cursor: pointer;
 }
 
+/* .details {
+  display: none;
+}
+
+.productImageCard:hover ~ .details{
+  display: block;
+  position: absolute;
+} */
+
+.details {
+  position: absolute;
+  top: 61%;
+  background: #5d5d8c;
+  width: 95%;
+  height: 5vh;
+  opacity: 0.7;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  /* transition: all 750ms; */
+}
+
+.details button {
+  height: 5vh;
+  background: #5d5d8c;
+  border: none;
+  color: #fff;
+  text-align: center;
+
+}
+
 .brand {
   display: flex;
   align-items: center;
