@@ -8,8 +8,6 @@ const Products = (data) => {
   const [isHovering, setIsHovering] = useState('')
   const [like, setLike] = useState('')
 
-  console.log('latestProducts', like)
-
   return (
     <div className="products">
       {data.data.data.length === 0 ? (

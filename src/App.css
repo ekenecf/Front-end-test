@@ -46,11 +46,6 @@
   border-color: #AAAAAA;
 }
 
-/* .search-box:focus-within {
-  border-color: #FF0080;
-  box-shadow: 0 0 0 5px rgba(255, 0, 128, 0.40);
-} */
-
 input {
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
@@ -131,11 +126,6 @@ small {
 }
 
 .products {
-  /* background-image:
-  linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url('../src/public/cloth.jpg');
-  background-repeat: no-repeat;
-  background-size: cover; */
-  /* background: #a9a6a6; */
  max-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -183,16 +173,13 @@ small {
   width: 61%;
   height: 80vh;
   display: grid;
-  /* justify-content: space-around; */
   overflow-y: auto;
   padding-left: 1%;
   grid-template-columns: auto auto auto;
-  /* flex-wrap: wrap; */
 }
 
 .productImageCard {
   width: 100%;
-  /* padding-left: 1%; */
   padding-top: 8%;
   padding-bottom: 15%;
   position: relative;
@@ -215,15 +202,6 @@ small {
   cursor: pointer;
 }
 
-/* .details {
-  display: none;
-}
-
-.productImageCard:hover ~ .details{
-  display: block;
-  position: absolute;
-} */
-
 .details {
   position: absolute;
   top: 61%;
@@ -234,7 +212,6 @@ small {
   color: #fff;
   display: flex;
   justify-content: center;
-  /* transition: all 750ms; */
 }
 
 .details button {
@@ -243,7 +220,6 @@ small {
   border: none;
   color: #fff;
   text-align: center;
-
 }
 
 .brand {
@@ -264,8 +240,6 @@ small {
   display: flex;
   align-items: center;
   padding-left: 7%;
-  /* width: 50%; */
-  /* justify-content: space-between; */
   column-gap: 2%;
   margin-bottom: 1%;
 }
@@ -301,10 +275,6 @@ input[type=checkbox] {
 .star-rating input[type="radio"]:checked ~ label:before {
   content: "\2605";
 }
-
-
-
-
 
 @media (max-width: 768px) {
   .search-box {
